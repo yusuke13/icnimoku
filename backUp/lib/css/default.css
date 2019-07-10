@@ -1,0 +1,453 @@
+@charset "utf-8";
+
+/*
+===== CONTENTS ===========================================
+
+	1: universal reset 
+	2: body and base setting
+		: general params
+		: acronyms and abbreviations styles
+	3: link setting
+
+==========================================================
+*/
+
+
+
+
+/*
+===== 1: universal reset =================================
+*/
+
+*{
+	margin:0;
+	padding:0;
+}
+
+/*
+===== 2: body and base setting ===========================
+*/
+
+body {
+	text-align:center;/* box centering */
+	margin: 0px auto;
+	padding: 0px;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+
+/* general params
+--------------------*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video{
+	padding: 0px;
+	margin: 0px;
+	line-height: 160%;
+    font-size: 100%;
+}
+
+table {margin : 0;empty-cells: show; font-size:100%;}
+
+hr,.areaAnchor,.anchor { display : none; }
+
+img {
+	border: none;
+	vertical-align: bottom;
+    max-width: 100%;
+    height: auto;
+}
+
+a img:hover {
+	opacity:0.7;
+	transition:all 0.5s ease;
+}
+
+nav ul {
+    list-style:none;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+	display:block;
+}
+
+/* acronyms and abbreviations styles 
+-------------------------------------*/
+acronym,abbr{cursor:help;}
+
+.clear {
+	margin:0;
+	padding:0;
+	line-height:0;
+	clear:both;
+}
+
+.clearfix{
+    zoom:1;/*for IE 5.5-7*/
+	overflow:hidden;
+	margin:0;
+	padding:0;
+}
+
+.clearfix:after{/*for modern browser*/
+    content:".";
+    display: block;
+    height:0px;
+    clear:both;
+    visibility:hidden;
+	overflow: hidden;/* 隙間対応 */
+	font-size: 0.1em;/* 隙間対応 */
+	line-height: 0;/* 隙間対応 */
+}
+
+* html .clearfix{
+	display:inline-table;
+	/*\*/display:block;/**/
+}
+
+/*
+===== 3: link setting ===========================
+*/
+
+a:link {
+  transition: 0.3s;
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
+a:visited {
+  transition: 0.3s;
+  color: #333333;
+  text-decoration: none;
+}
+
+a:hover {
+	animation: gradation 1s;
+	color: #FF8000;
+	color: #195493;
+	text-decoration: underline;;
+}
+
+/*
+===== 5: FLOART ==========================================
+*/
+
+.floatL {
+	float:left;
+}
+
+.floatR {
+	float:right;
+}
+
+.alignL {
+	text-align:left;
+}
+
+.alignR {
+	text-align:right;
+}
+
+.alignC {
+	text-align:center;
+}
+
+/*
+===== 5: 標準テーブル ==========================================
+*/
+
+.normalTbl,
+.tableDetail2 {
+	margin:0 0 20px 0;
+	font-size: 95%;
+}
+
+.normalTbl table,
+.tableDetail2 table {
+	border-top: 1px solid #E5E5E5;
+	border-left: 1px solid #E5E5E5;
+	border-spacing:0;
+	width:100%;
+}
+
+.normalTbl table td,
+.tableDetail2 table td {
+	border-right: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+	padding: 15px 20px;
+	background-color:#FFFFFF;
+	text-align:left;
+}
+
+.normalTbl table th,
+.tableDetail2 table th {
+	border-right: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+	padding: 15px 20px;
+	font-weight: bold;
+	border-top: 1px solid #FFFFFF;
+	border-left: 1px solid #FFFFFF;
+	background-color:#F5F3E9;
+	text-align:left;
+}
+
+
+.tableDetail {
+	margin: 60px 0 30px;
+	font-size: 95%;
+}
+
+.tableDetail table  {
+	border-spacing:0;
+	width:100%;
+}
+
+.tableDetail table td {
+	text-align:left;
+}
+
+.tableDetail table th {
+	display: none;
+}
+
+.normalTbl2 {
+	margin:0 0 20px 0;
+	font-size: 95%;
+}
+
+.normalTbl2 table {
+	border-top: 1px solid #E5E5E5;
+	border-left: 1px solid #E5E5E5;
+	border-spacing:0;
+	width:100%;
+}
+
+.normalTbl2 table td {
+	border-right: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+	padding: 15px 20px;
+	background-color:#FFFFFF;
+	text-align:center;
+}
+
+.normalTbl2 table th {
+	border-right: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+	padding: 15px 20px;
+	font-weight: bold;
+	border-top: 1px solid #FFFFFF;
+	border-left: 1px solid #FFFFFF;
+	background-color:#F5F3E9;
+	text-align:center;
+}
+
+.normalTbl3 {
+	margin:0 0 20px 0;
+	font-size: 95%;
+}
+
+.normalTbl3 table {
+	border-top: 1px solid #E5E5E5;
+	border-left: 1px solid #E5E5E5;
+	border-spacing:0;
+	width:100%;
+}
+
+.normalTbl3 table td {
+	border-right: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+	padding: 15px 20px;
+	background-color:#FFFFFF;
+	text-align:center;
+}
+
+.normalTbl3 table th {
+	border-right: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+	padding: 15px 20px;
+	font-weight: bold;
+	border-top: 1px solid #FFFFFF;
+	border-left: 1px solid #FFFFFF;
+	background-color:#F5F5F5;
+	text-align:center;
+}
+
+.icon {
+	padding-bottom: 3px;
+}
+
+/*
+===== 5: MARGIN ==========================================
+*/
+
+.mt5 {
+	margin-top:5px;
+}
+
+.mt10 {
+	margin-top:10px;
+}
+
+.mt20 {
+	margin-top:20px;
+}
+
+.mt30 {
+	margin-top:30px;
+}
+
+.mt40 {
+	margin-top:40px;
+}
+
+.mt50 {
+	margin-top:50px;
+}
+
+.mt100 {
+	margin-top:100px;
+}
+
+.ml5 {
+	margin-left:5px;
+}
+
+.ml10 {
+	margin-left:10px;
+}
+
+.ml15 {
+	margin-left:15px;
+}
+
+.ml20 {
+	margin-left:20px;
+}
+
+.ml30 {
+	margin-left:30px;
+}
+
+.ml40 {
+	margin-left:40px;
+}
+
+.ml50 {
+	margin-left:50px;
+}
+
+.mr10 {
+	margin-right:10px;
+}
+
+.mr15 {
+	margin-right:15px;
+}
+
+.mr20 {
+	margin-right:20px;
+}
+
+.mr30 {
+	margin-right:30px;
+}
+
+.mr40 {
+	margin-right:40px;
+}
+
+.mr50 {
+	margin-right:50px;
+}
+
+.mb10 {
+	margin-bottom:10px;
+}
+
+.mb15 {
+	margin-bottom:15px;
+}
+
+.mb20 {
+	margin-bottom:20px;
+}
+
+.mb30 {
+	margin-bottom:30px;
+}
+
+.mb40 {
+	margin-bottom:40px;
+}
+
+.mb50 {
+	margin-bottom:50px;
+}
+
+.pt30 {
+	padding-top:30px;
+}
+
+.pt50 {
+	padding-top:50px;
+}
+
+/*
+===== 6: FONT ==========================================
+*/
+
+.font {
+	font-family: "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", "serif";
+}
+
+.fontLLL {
+	font-size:200%;
+	line-height:130%;
+}
+
+.fontLL {
+	font-size:180%;
+}
+
+.fontL {
+	font-size:140%;
+}
+
+.fontM {
+	font-size:110%;
+}
+
+.fontS {
+	font-size:80%;
+}
+
+.fontSS {
+	font-size:70%;
+}
+
+.bold {
+	font-weight:bold;
+}
+
+.blue {
+	color:#4C7FB6;
+}
+
+.white {
+	color: #FFF;
+}
+
+.display {
+	display: block;
+}

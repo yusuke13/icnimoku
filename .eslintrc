@@ -1,0 +1,16 @@
+{
+  "extends" : "airbnb-base",
+  "rules": {
+    "strict": 0,
+    "no-unused-vars": [1, {"vars" : "all", "args" : "after-used"} ],
+    "comma-dangle": ["error", "never"],
+    "class-methods-use-this": [0]
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "document": false
+  }
+}

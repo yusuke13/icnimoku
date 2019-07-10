@@ -1,0 +1,2089 @@
+
+/* ----------------------------------------------------------------------------------------------------
+     全端末共通のCSS（961px〜）
+---------------------------------------------------------------------------------------------------- */
+
+.pc {
+	display:block;
+}
+
+.sp {
+	display:none;
+}
+
+.tab2 {
+	display:none;
+}
+
+/* レイアウト
+------------------------------------------------------------------------*/
+
+body {
+	color:#231815;
+	text-align:center;
+	margin:0 auto;
+	height:100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+#wrap {
+	width:100%;
+	text-align:center;
+	margin:0 auto;
+}
+
+#layout {
+	width:100%;
+	text-align:center;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+.width {
+	width:1100px;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/* 文字
+------------------------------------------------------------------------*/
+
+h1 {
+	text-align: center;
+	font-family: "ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+	font-size: 220%;
+	font-weight: normal;
+	margin-bottom: 40px;
+}
+
+h1 span {
+	color: #B91B22;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+	display: block;
+	font-size: 45%;
+	margin-top: -5px;
+}
+
+h2 {
+	background: #231815;
+	padding: 15px;
+	margin-bottom: 20px;
+	color: #FFF;
+	text-align: center;
+	font-size: 110%;
+}
+
+h3 {
+	border-left: 6px solid #B91B22;
+	font-size: 130%;
+	font-family: "ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+	text-align: left;
+	padding-left: 10px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+h4 {
+	position: relative;
+	text-align: left;
+	margin-bottom: 10px;
+	font-size: 110%;
+}
+
+h4 span {
+	position: relative;
+	z-index: 2;
+	display: inline-block;
+	margin: 0 2.5em 0 0;
+	padding: 0 1em 0 0;
+	background-color: #fff;
+	text-align: left;
+}
+
+h4::before {
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+	content: '';
+	display: block;
+	width: 100%;
+	height: 1px;
+	background-color: #ccc;
+}
+
+p {
+	font-size: 95%;
+	line-height: 180%;
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+.title {
+	font-family: "ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+	font-size: 260%;
+	line-height: 160%;
+}
+
+.red {
+	color: #B91B22;
+}
+
+ul.text {
+	text-align: left;
+	font-size: 95%;
+	padding-bottom: 20px;
+}
+
+ul.text li {
+	line-height: 180%;
+	padding: 0 0 0 10px;
+	list-style: inside;
+}
+
+/*
+ol.text {
+	text-align: left;
+	font-size: 90%;
+	padding-bottom: 20px;
+}
+
+ol.text li {
+	line-height: 200%;
+	padding: 0 0 0 10px;
+	list-style: inside;
+}
+*/
+
+ol.text {
+	counter-reset:list;
+	list-style-type:none;
+	padding:0;
+	text-align: left;
+}
+
+/* ヘッダー
+------------------------------------------------------------------------*/
+
+header {
+	margin-top: 30px;
+}
+
+#h_left {
+	float: left;
+}
+
+#h_right {
+	float: right;
+}
+
+#left_h_right {
+	float: left;
+	margin-right: 20px;
+}
+
+#left_h_right p {
+	margin-bottom: -5px;
+	line-height: 100%;
+}
+
+#left_h_right p:nth-child(1) {
+	font-size: 80%;
+}
+
+#left_h_right p:nth-child(1) span {
+	font-size: 70%;
+}
+
+#left_h_right .tel {
+	font-family: "ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+	font-size: 210%;
+}
+
+#left_h_right .tel span {
+	background: url("../img/footer/tel.svg") 0 13px no-repeat;
+	padding-left: 35px;
+}
+
+#right_h_right {
+	float: right;
+}
+
+#h_link {
+	margin-top: 30px;
+}
+
+/* ナビゲーション
+------------------------------------------------------------------------*/
+
+#t_navi {
+	margin-top: 10px;
+}
+
+#mdd_nav_wrap {
+	width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+	border-top: 1px solid #E5E5E5;
+}
+
+/*
+-- 共通（Level1） -------------------------  */
+
+ul.mdd_lv1 {
+    position: relative;
+    list-style:none;
+    margin:0;
+    padding:0;
+    z-index:50;
+    box-sizing: border-box;
+}
+
+ul.mdd_lv1 li {
+    float: left;
+	width: 14.2857%;
+	border-left: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    list-style: none;
+	font-weight: bold;
+	font-size: 95%;
+	font-family: "ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+}
+
+ul.mdd_lv1 li:nth-child(7) {
+	border-right: 1px solid #E5E5E5;
+}
+
+ul.mdd_lv1 li a.navi_1 { background: url("../img/nav/navi01.png") center 10px no-repeat; padding-top: 100px;}
+ul.mdd_lv1 li a.navi_2 { background: url("../img/nav/navi02.png") center 10px no-repeat; padding-top: 100px;}
+ul.mdd_lv1 li a.navi_3 { background: url("../img/nav/navi03.png") center 10px no-repeat; padding-top: 100px;}
+ul.mdd_lv1 li a.navi_4 { background: url("../img/nav/navi04.png") center 10px no-repeat; padding-top: 100px;}
+ul.mdd_lv1 li a.navi_5 { background: url("../img/nav/navi05.png") center 10px no-repeat; padding-top: 100px;}
+ul.mdd_lv1 li a.navi_6 { background: url("../img/nav/navi06.png") center 10px no-repeat; padding-top: 100px;}
+ul.mdd_lv1 li a.navi_7 { background: url("../img/nav/navi07.png") center 10px no-repeat; padding-top: 100px;}
+
+ul.mdd_lv1 li a {
+    color: #231815;
+    display: block;
+	padding: 10px 0;
+}
+
+ul.mdd_lv1 li a:hover,
+ul.mdd_lv1 > li.selected > a {
+    background-color: #FAF9F4;
+}
+
+/*
+-- 共通（Level2） -------------------------  */
+
+ul.mdd_lv2 {
+    display: none;
+    position: absolute;
+	top: 132px;
+    left: 0px;
+    width: 100%;
+    list-style-position: outside;
+	padding: 15px;
+	margin: 0;
+	text-align: left;
+    background-color: #FAF9F4;
+	box-sizing: border-box;
+	border-left: 1px solid #E5E5E5;
+	border-right: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+}
+
+ul.mdd_lv1 li:hover ul.mdd_lv2 {
+    display:block;
+}
+
+ul.mdd_lv2 li {
+	padding: 0;
+    margin: 0;
+    width: auto;
+}
+
+ul.mdd_lv2 li a {
+    height: auto;
+    background-color: none;
+    width: auto;
+    color: #FFF;
+}
+
+ul.mdd_lv2 li a:hover {
+}
+
+ul.mdd_lv2 li a span {
+	padding-top: 2px; 
+	font-size: 90%;
+	display: block;
+	background: url(../img/navi/arrow.png) center left no-repeat;
+	padding-left: 23px;
+}
+
+ul.mdd_lv1 li ul.mdd_lv2 li {
+	border: none;
+}
+
+#navi_1 li,
+#navi_2 li,
+#navi_3 li,
+#navi_4 li,
+#navi_5 li,
+#navi_6 li,
+#navi_7 li {
+	float: left;
+	margin-left: 10px;
+	box-sizing: border-box;
+}
+
+#b_navi {
+	clear: both;
+	background: #FAF9F4;
+	border-top: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+	box-sizing: border-box;
+}
+
+#left_b_navi {
+	float: left;
+}
+
+#right_b_navi {
+	float: right;
+}
+
+#right_b_navi ul li {
+	list-style: none;
+	display: inline;
+	background: url("../img/nav/list.png") center left no-repeat;
+	padding-left: 18px;
+	font-size: 85%;
+	margin-left: 20px;
+}
+
+#b_navi_box {
+	border-top: 1px solid #FFF;
+	border-bottom: 1px solid #FFF;
+	padding: 12px 10px 12px 10px;
+	box-sizing: border-box;
+}
+
+.searchInput {
+	float: left;
+}
+
+.searchInput input {
+	height: 30px;
+	width: 180px;
+	margin-right: 7px;
+}
+
+.searchBtn {
+	float: right;
+	background: #B91B22;
+	border-radius: 5px;
+	font-size: 60%;
+	margin-top: 0;
+}
+
+.searchBtn a {
+	display: block;
+	padding: 5px 15px;
+	color: #FFF;
+}
+
+/* 共通コンテンツ
+------------------------------------------------------------------------*/
+
+#container {
+}
+
+section {
+	margin-top: 80px;
+}
+
+.column2 {
+	width:49%;
+	float:left;
+	margin-bottom:20px;
+	margin-right:2%;
+}
+
+.column2:nth-child(2n) {
+	margin-right:0;
+}
+
+.column3 {
+	width:32%;
+	float:left;
+	margin-bottom:20px;
+	margin-right:2%;
+}
+
+.column3:nth-child(3n) {
+	margin-right:0;
+}
+
+.column4 {
+	width:23.5%;
+	float:left;
+	margin-right:2%;
+}
+
+.column4:nth-child(4n) {
+	margin-right:0;
+}
+
+.column5 {
+	width:18%;
+	float:left;
+	margin-right:2.5%;
+}
+
+.column5:nth-child(5n) {
+	margin-right:0;
+}
+
+/* トップページ
+------------------------------------------------------------------------*/
+
+#main {
+	z-index: 1;
+	position: relative;
+}
+
+#main p {
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding: auto;
+	text-align: center;
+	line-height: 100%;
+	z-index: 10;
+	width: 353px;
+	height: 110px;
+	filter: drop-shadow(0px 0px 2px rgba(255,255,255,1));
+}
+
+/* 新着情報
+-------------------------------------*/
+
+#newsUl {
+	text-align:left;
+}
+
+#newsUl ul {
+}
+
+#newsUl ul li {
+	padding: 25px 0;
+	list-style: none;
+	border-bottom: 1px solid #E5E5E5;
+	font-size: 95%;
+}
+
+#newsUl ul li span {
+	background: #B91B22;
+	font-weight: bold;
+	color: #FFF;
+	margin-right: 10px;
+	padding: 5px 20px;
+	font-size: 70%;
+	border-radius: 3px;
+}
+
+#newsUl ul li a {
+	padding-left: 10px;
+}
+
+/* おすすめ商品
+-------------------------------------*/
+
+.box {
+	border: 1px solid #E5E5E5;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.box_main {
+	border: 1px solid #FFF;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.silk::before,
+.wool::before {
+    content: "";
+    top: 1px;
+    left: 1px;
+    border-bottom: 5em solid transparent;
+    border-left: 5em solid #B91B22;
+    position: absolute;
+    z-index: 100;
+}
+
+.silk span,
+.wool span {
+	position: absolute;
+	text-align: center;
+    top: 15px;
+    left: 5px;
+    transform: rotate(-45deg);
+	z-index: 110;
+    color: #fff;
+	font-weight: bold;
+}
+
+.hemp::before,
+.cotton::before {
+    content: "";
+    top: 1px;
+    left: 1px;
+    border-bottom: 5em solid transparent;
+    border-left: 5em solid #B91B22;
+    position: absolute;
+    z-index: 100;
+}
+
+.hemp span,
+.cotton span {
+	position: absolute;
+	text-align: center;
+    top: 15px;
+    left: 20px;
+    transform: rotate(-45deg);
+	z-index: 110;
+    color: #fff;
+	font-weight: bold;
+}
+
+.name {
+	margin-bottom: 0px;
+	line-height: 150%;
+}
+
+.price {
+	color: #B91B22;
+}
+
+.price span {
+	font-size: 65%;
+	color: #B91B22;
+}
+
+/* 下階層
+------------------------------------------------------------------------*/
+
+#content {
+	width: 800px;
+	float: right;
+}
+
+.cart {
+	background: #B91B22;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 120%;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+.cart a {
+	padding: 20px 0 23px;
+	display: block;
+	color: #FFF;
+	border-radius: 5px;
+}
+
+.cart a:hover {
+	background: #A3151B;
+}
+
+.bgKiara {
+	background: url("https://www.rakuten.ne.jp/gold/monkiara/lib/img/content/top/kiara_logo.png") top left no-repeat;
+}
+
+.bgMon {
+	background: url("https://www.rakuten.ne.jp/gold/monkiara/lib/img/content/top/mon_logo.png") top left no-repeat;
+}
+
+.box2 {
+	box-sizing: border-box;
+	margin-bottom: 0;
+	position: relative;
+}
+
+.box3 {
+	background: #FFF;
+	border: 1px solid #E5E5E5;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.box_main2 {
+	border: 1px solid #FFF;
+	box-sizing: border-box;
+}
+
+.mt {
+	margin-top: 180px;
+}
+
+.mt2 {
+	margin-top: 300px;
+}
+
+.cloth {
+	position: relative;
+}
+
+.cloth p {
+	width: 100%;
+	height: 100%;
+}
+
+.cloth div {
+	position: absolute;
+	z-index: 100;
+	top: 50%;
+	left: 50%;
+	margin-top: -74.5px;
+	margin-left: -74.5px;
+}
+
+.bg {
+	background: #F5F3E9;
+	padding: 20px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+}
+
+
+.mon_title {
+	margin-bottom: 50px;
+	font-size: 160%;
+	font-family: "ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+	padding: 70px 30px;
+	background: #F5F5F5 url("https://www.rakuten.ne.jp/gold/monkiara/lib/img/content/about_mon/mon.png") center right no-repeat;
+	background-size: 40%;
+	border: 1px solid #EEE;
+	box-sizing: border-box;
+	letter-spacing: 0.2em;
+}
+
+.mon_title02 {
+	text-align: left;
+	margin-bottom: 20px;
+	margin-top: 30px;
+	padding-bottom: 10px;
+	font-size: 130%;
+	border-bottom: 1px dotted #999;
+	font-family: "ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+}
+
+.mon {
+	font-family: "ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+	margin-bottom: 20px;
+	font-size: 150%;
+	text-align: left;
+}
+
+.mon span {
+	float: right;
+}
+
+.mon_red {
+	background: url("https://www.rakuten.ne.jp/gold/monkiara/lib/img/content/about_mon/mon_red.png") center left no-repeat;
+	padding: 10px 0 10px 50px;
+}
+
+.mon_blue {
+	background: url("https://www.rakuten.ne.jp/gold/monkiara/lib/img/content/about_mon/mon_blue.png") center left no-repeat;
+	padding: 10px 0 10px 50px;
+}
+	
+.people {
+	background: url("https://www.rakuten.ne.jp/gold/monkiara/lib/img/content/about_mon/people.png") center left no-repeat;
+	padding: 10px 0 10px 80px;
+}
+
+
+/* サイドバー
+------------------------------------------------------------------------*/
+
+#sidebar {
+	width: 230px;
+	float: left;
+}
+
+#sidebar h3 {
+	background: #231815;
+	text-align: center;
+	padding: 7px 0 5px;
+	margin-bottom: 15px;
+	font-size: 95%;
+	border: none;
+	color: #FFF;
+}
+
+.side_main {
+	margin-bottom: 20px;
+}
+
+.searchInput2 {
+}
+
+.searchInput2 input {
+	height: 30px;
+	width: 100%;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+}
+
+.searchBtn2 {
+	background: #B91B22;
+	border-radius: 5px;
+	font-size: 85%;
+	margin-top: 0;
+	width: 50%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.searchBtn2 a {
+	display: block;
+	padding: 5px 15px;
+	color: #FFF;
+}
+
+.side_main dl {
+	list-style: none;
+	text-align: left;
+	margin-bottom: 30px;
+	font-size: 85%;
+}
+
+.side_main dl dt {
+	border-bottom: 1px solid #E5E5E5;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	font-weight: bold;
+}
+
+.side_main dl dd {
+	background: url("../img/side/arrow.png") center left no-repeat;
+	padding-left: 10px;
+	margin-bottom: 15px;
+}
+
+.side_main ul li {
+	list-style: none;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+/* フッター
+------------------------------------------------------------------------*/
+
+footer {
+	margin-top: 150px;
+}
+
+#f_top {
+	margin-bottom: 20px;
+}
+
+#f_main {
+}
+
+#l_f_main {
+	float: left;
+}
+
+.sitemap {
+	float:left;
+	margin-bottom: 20px;
+	margin-right: 100px;
+	font-size: 95%;
+}
+
+.sitemap:nth-of-type(3) {
+	margin-right:0px;
+}
+
+.sitemap dl {
+	margin-bottom: 20px;
+	text-align:left;
+	list-style:none;
+}
+
+.sitemap dl dt {
+	margin-bottom: 5px;
+}
+
+.sitemap dl dt a {
+}
+
+.sitemap dl dd {
+	font-size: 100%;
+	text-align: left;
+	padding-left: 18px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	background: url("../img/footer/arrow.jpg") center left no-repeat;
+}
+
+.sitemap dl dd a {
+}
+
+#r_f_main {
+	float: right;
+}
+
+#f_btm {
+	border-top: 1px solid #E5E5E5;
+}
+
+#f_left {
+	float: left;
+	padding: 30px 0 15px;
+}
+
+#f_right {
+	float: right;
+	padding: 35px 0 15px;
+}
+
+#left_f_right {
+	float: left;
+	margin-right: 20px;
+}
+
+#left_f_right p {
+	margin-bottom: -5px;
+	line-height: 100%;
+}
+
+#left_f_right p:nth-child(1) {
+	font-size: 80%;
+}
+
+#left_f_right p:nth-child(1) span {
+	font-size: 70%;
+}
+
+#left_f_right .tel {
+	font-family: "ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+	font-size: 210%;
+}
+
+#left_f_right .tel span {
+	background: url("../img/footer/tel.svg") 0 13px no-repeat;
+	padding-left: 35px;
+}
+
+#right_f_right {
+	float: right;
+}
+
+address {
+	text-align:center;
+	font-style:normal;
+	background: #231815;
+	color: #FFF;
+	font-size:70%;
+	padding: 20px 0;
+}
+
+/* その他
+------------------------------------------------------------------------*/
+
+div.normalTbl input {
+	font-size: 100%;
+	height: 25px;
+	color: #666;
+}
+
+div.normalTbl select {
+	color: #666;
+	font-size: 100%;
+}
+
+div.normalTbl textarea {
+	color: #666;
+	font-size: 100%;
+	border-color: #CCC;
+}
+
+.formButton {
+	text-align:center;
+	margin:0 auto;
+	display: block;
+	margin-top: 40px;
+}
+
+.formButton input {
+	padding:20px 10%;
+	text-align: center;
+	margin: 0 auto;
+	border-style: none;
+	background: #B91B22;
+	color: #FFF;
+	font-size: 100%;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.formButton input:hover {
+	background:#FF8800;
+	transition: 0.3s;
+}
+
+/* ローディング
+-------------------------------------*/
+/*
+.loading {
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,1.0);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 20000;
+}
+
+.loading img {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -30px;
+	margin-left: -30px;
+}
+*/
+
+/* その他ナビゲーション
+-------------------------------------*/
+
+.btn {
+	background: #B91B22;
+	color: #FFF;
+	margin: 0 auto;
+	text-align: center;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.btn a {
+	color: #FFFFFF;
+	transition: 0.3s;
+	text-decoration: none;
+	display: block;
+	padding: 12px 50px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.btn a:hover {
+	color: #FFFFFF;
+	transition: 0.3s;
+	text-decoration: underline;
+	background-color: #A3151B;
+}
+
+/* ページトップ
+-------------------------------------*/
+
+#page-top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 80%;
+}
+
+#page-top a {
+    background: #231815;
+    text-decoration: none;
+    color: #fff;
+	padding: 20px 15px;
+    text-align: center;
+    display: block;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+#page-top a:hover {
+    text-decoration: none;
+    background: #B91B22;
+}
+
+
+/* 楽天追加分
+------------------------------------------------------------------------*/
+
+/* 商品カテゴリ
+-------------------------------------*/
+
+td[width="20"] {
+	width:0 !important;
+}
+
+td[width="630"] {
+	width:800px !important;
+}
+
+img[width="20"] {
+	width:0 !important;
+}
+
+#risFil .risfHeadFootWrap {
+	padding: 15px !important;
+	border-bottom: 1px solid #CCC !important;
+	border-top: 1px solid #CCC !important;
+	border-left: none !important;
+	border-right: none !important;
+	background: #FFF !important;
+	margin-bottom: 40px;
+	vertical-align: middle;
+}
+
+#risFil .categoryWindowImg {
+	height: 250px !important;
+	width: 100% !important;
+}
+
+#risFil .categoryWindowImg img {
+	border: 1px solid #EEE;
+}
+
+#risFil .imageFilter {
+	background: none !important;
+}
+
+/* 商品詳細
+-------------------------------------*/
+
+#rakutenLimitedId_aroundCart {
+	margin-top: 20px;
+}
+
+table .skuDisplayTable {
+	width: 100%;
+	margin: 10px 0 !important;
+}
+
+/*商品名*/
+span.catch_copy {
+	padding-left: 20px;
+	margin-bottom: 20px;
+	font-size: 200%;
+	display: block;
+	font-family: "ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+}
+
+/*キャッチコピー*/
+span.item_name {
+	margin-left: 20px;
+	/*
+	color: #B91B22;
+	*/
+	display: block;
+	font-size: 150%;
+	font-weight: normal;
+}
+/*
+#rakutenLimitedId_cart {
+	text-align: center;
+	margin: 0 auto;
+}
+*/
+
+/*価格1*/
+span.price1 {
+	text-align: right;
+	color: #333;
+}
+
+/*価格2*/
+span.price2 {
+	text-align: left;
+	color: #B91B22;
+	font-size: 180%;
+	font-weight: bold;
+}
+
+/*商品番号*/
+.item_number_title {
+	margin-left: 20px;
+}
+
+/*商品番号*/
+.rakutenLimitedId_ImageMain1-3 {
+	margin-right: 10px;
+	box-sizing: border-box;
+}
+
+/*ポイント*/
+.bdg-point-display {
+	margin-left: 20px;
+}
+
+/*送料*/
+#displayShippingFeeContainer {
+	margin-left: 20px;
+}
+
+/*サイズ*/
+.floating-cart-sku-table table {
+	border-top: 1px solid #E5E5E5;
+	border-left: 1px solid #E5E5E5;
+	border-spacing:0;
+	width:100%;
+}
+
+.floating-cart-sku-table table td {
+	border-right: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+	padding: 15px 20px;
+	background-color:#FFFFFF;
+	text-align:center;
+}
+
+.floating-cart-sku-table table td.inventory_choice_name {
+	border-right: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+	padding: 15px 20px;
+	font-weight: bold;
+	border-top: 1px solid #FFFFFF;
+	border-left: 1px solid #FFFFFF;
+	background-color:#F5F3E9;
+	text-align:center;
+}
+
+/*個数*/
+.floatingCartPurchaseButtonsContainer {
+	margin-top: 20px;
+	padding-top: 20px;
+}
+
+/*個数 左側*/
+.unit {
+	background-color:#F5F3E9;
+	padding: 20px;
+	border: 1px solid #EEE;
+}
+
+/*個数　右側*/
+input.rItemUnits {
+	margin-left: 10px;
+	padding: 20px;
+	border: 1px solid #EEE;
+}
+
+.floatingCartSplitButtons {
+	width: 100%;
+	margin: 10px 0 !important;
+}
+
+#rakutenLimitedId_aroundCart {
+	margin-left: 20px;
+}
+
+div#rakutenLimitedId_aroundCart .rItemUnits {
+	widows: 100px !important;
+	height: 50px !important;
+	margin: 0 0 0 10px !important;
+	text-align: center !important;
+	padding: 15px !important;
+}
+
+/* ご購入手続きへボタン */
+#pagebody div#rakutenLimitedId_aroundCart .new-cart-button[data-ratid="fixed_checkout"] {
+    background: url(https://www.rakuten.ne.jp/gold/monkiara/lib/img/common/cart02.png) 0 0!important;
+    width:240px!important;
+    height:70px!important;
+    text-indent: -9999px!important;
+    border-radius: 0px !important;
+}
+
+/* 商品をかごに追加ボタン */
+#pagebody div#rakutenLimitedId_aroundCart .new-cart-button[data-ratid="fixed_add"] {
+    background: url(https://www.rakuten.ne.jp/gold/monkiara/lib/img/common/cart01.png) 0 0!important;
+    width:240px!important;
+    height:70px!important;
+    text-indent: -9999px!important;
+    border-radius: 0px !important;
+}
+
+/*商品写真*/
+.rakutenLimitedId_ImageMain1-3 img {
+	border: 1px solid #EEE;
+}
+
+
+
+/* ----------------------------------------------------------------------------------------------------
+     タブレット・PC端末（480px〜960px）
+---------------------------------------------------------------------------------------------------- */ 
+@media only screen and (max-width: 1100px) {
+
+.pc {
+	display:none;
+}
+
+.sp {
+	display:none;
+}
+
+
+} /* /@media */
+
+
+
+/* ----------------------------------------------------------------------------------------------------
+     小型タブレット・スマホ端末（〜480px）（〜640px）
+---------------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 640px) {
+
+.pc {
+	display:none;
+}
+
+.sp {
+	display:block;
+}
+
+.width {
+	width:90%;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/* 文字
+------------------------------------------------------------------------*/
+
+h1 {
+	text-align: center;
+	font-family: "ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+	font-size: 220%;
+	font-weight: normal;
+	margin-bottom: 30px;
+}
+
+h1 span {
+	color: #B91B22;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+	display: block;
+	font-size: 45%;
+	margin-top: -5px;
+}
+
+h2 {
+	background: #231815;
+	padding: 15px;
+	margin-bottom: 20px;
+	color: #FFF;
+	text-align: center;
+	font-size: 110%;
+}
+
+h3 {
+	border-left: 6px solid #B91B22;
+	font-size: 130%;
+	font-family: "ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+	text-align: left;
+	padding-left: 10px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+h4 {
+	position: relative;
+	text-align: left;
+	margin-bottom: 10px;
+	font-size: 110%;
+}
+
+h4 span {
+	position: relative;
+	z-index: 2;
+	display: inline-block;
+	margin: 0 2.5em 0 0;
+	padding: 0 1em 0 0;
+	background-color: #fff;
+	text-align: left;
+}
+
+h4::before {
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+	content: '';
+	display: block;
+	width: 100%;
+	height: 1px;
+	background-color: #ccc;
+}
+
+p {
+	font-size: 95%;
+	line-height: 180%;
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+.title {
+	font-family: "ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+	font-size: 260%;
+	line-height: 160%;
+}
+
+.red {
+	color: #B91B22;
+}
+
+ul.text {
+	text-align: left;
+	font-size: 95%;
+	padding-bottom: 20px;
+}
+
+ul.text li {
+	line-height: 180%;
+	padding: 0 0 0 10px;
+	list-style: inside;
+}
+
+ol.text {
+	counter-reset:list;
+	list-style-type:none;
+	padding:0;
+	text-align: left;
+}
+
+/* ヘッダー
+------------------------------------------------------------------------*/
+
+header {
+	margin-top: 30px;
+}
+
+#h_left {
+	float: left;
+	width: 45%;
+}
+
+#h_right {
+	float: right;
+}
+
+#left_h_right {
+	display: none;
+	float: none;
+	margin-right: 0;
+}
+
+#left_h_right p {
+	margin-bottom: -5px;
+	line-height: 100%;
+}
+
+#left_h_right p:nth-child(1) {
+	font-size: 80%;
+}
+
+#left_h_right p:nth-child(1) span {
+	font-size: 70%;
+}
+
+#left_h_right .tel {
+	font-family: "ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+	font-size: 180%;
+}
+
+#left_h_right .tel span {
+	background: url("../img/footer/tel.svg") 0 8px no-repeat;
+	padding-left: 35px;
+}
+
+#right_h_right {
+	margin-top: 0;
+	float: right;
+}
+
+#h_link {
+	margin-top: 30px;
+}
+
+/* ナビゲーション
+------------------------------------------------------------------------*/
+
+#t_navi {
+	display: none;
+	margin-top: 10px;
+}
+
+#b_navi {
+	clear: both;
+	background: #FAF9F4;
+	border-top: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+	box-sizing: border-box;
+}
+
+#left_b_navi {
+	display: none;
+	float: left;
+}
+
+#right_b_navi {
+	float: none;
+}
+
+#right_b_navi ul li {
+	list-style: none;
+	display: inline;
+	background: url("../img/nav/list.png") center left no-repeat;
+	padding-left: 18px;
+	font-size: 85%;
+	margin-left: 20px;
+}
+
+#b_navi_box {
+	border-top: 1px solid #FFF;
+	border-bottom: 1px solid #FFF;
+	padding: 12px 10px 12px 10px;
+	box-sizing: border-box;
+}
+
+.searchInput {
+	float: left;
+}
+
+.searchInput input {
+	height: 23px;
+	width: 200px;
+	margin-right: 7px;
+}
+
+.searchBtn {
+	float: right;
+	background: #B91B22;
+	border-radius: 5px;
+	font-size: 60%;
+	margin-top: 0;
+}
+
+.searchBtn a {
+	display: block;
+	padding: 5px 15px;
+	color: #FFF;
+}
+
+/* 共通コンテンツ
+------------------------------------------------------------------------*/
+
+#container {
+}
+
+section {
+	margin-top: 50px;
+}
+
+.column2 {
+	width: 100%;
+	float: none;
+	margin-bottom:0;
+	margin-right: 0%;
+}
+
+.column2:nth-child(2n) {
+	margin-right:0;
+}
+
+#home .column2 {
+	width:49%;
+	float:left;
+	margin-bottom:0;
+	margin-right:2%;
+}
+
+#home .column2:nth-child(2n) {
+	margin-right:0;
+}
+
+.column3 {
+	width:49%;
+	float:left;
+	margin-bottom:0;
+	margin-right:2%;
+}
+
+.column3:nth-child(3n) {
+	margin-right:2%;
+}
+
+.column3:nth-child(2n) {
+	margin-right:0;
+}
+
+.column4 {
+	width:49%;
+	float:left;
+	margin-bottom:0;
+	margin-right:2%;
+}
+
+.column4:nth-child(4n) {
+	margin-right:2%;
+}
+
+.column4:nth-child(2n) {
+	margin-right:0;
+}
+
+.column5 {
+	width:18%;
+	float:left;
+	margin-right:2.5%;
+}
+
+.column5:nth-child(5n) {
+	margin-right:0;
+}
+
+/* トップページ
+------------------------------------------------------------------------*/
+
+#main {
+	z-index: 1;
+	position: relative;
+}
+
+#main p {
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding: auto;
+	text-align: center;
+	line-height: 100%;
+	z-index: 10;
+	width: 50%;
+	height: 50%;
+	filter: drop-shadow(0px 0px 2px rgba(255,255,255,1));
+}
+
+/* 新着情報
+-------------------------------------*/
+
+#newsUl {
+	text-align:left;
+}
+
+#newsUl ul {
+}
+
+#newsUl ul li {
+	padding: 25px 0;
+	list-style: none;
+	border-bottom: 1px solid #E5E5E5;
+	font-size: 95%;
+}
+
+#newsUl ul li span {
+	background: #B91B22;
+	font-weight: bold;
+	color: #FFF;
+	margin-right: 10px;
+	padding: 5px 20px;
+	font-size: 70%;
+	border-radius: 3px;
+}
+
+#newsUl ul li a {
+	padding-left: 10px;
+}
+
+/* おすすめ商品
+-------------------------------------*/
+
+.box {
+	border: 1px solid #E5E5E5;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.box_main {
+	border: 1px solid #FFF;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+.silk::before,
+.wool::before {
+    content: "";
+    top: 1px;
+    left: 1px;
+    border-bottom: 5em solid transparent;
+    border-left: 5em solid #B91B22;
+    position: absolute;
+    z-index: 100;
+}
+
+.silk span,
+.wool span {
+	position: absolute;
+	text-align: center;
+    top: 15px;
+    left: 5px;
+    transform: rotate(-45deg);
+	z-index: 110;
+    color: #fff;
+	font-weight: bold;
+}
+
+.hemp::before,
+.cotton::before {
+    content: "";
+    top: 1px;
+    left: 1px;
+    border-bottom: 5em solid transparent;
+    border-left: 5em solid #B91B22;
+    position: absolute;
+    z-index: 100;
+}
+
+.hemp span,
+.cotton span {
+	position: absolute;
+	text-align: center;
+    top: 15px;
+    left: 20px;
+    transform: rotate(-45deg);
+	z-index: 110;
+    color: #fff;
+	font-weight: bold;
+}
+
+.name {
+	margin-bottom: 0px;
+	line-height: 150%;
+}
+
+.price {
+	color: #B91B22;
+}
+
+.price span {
+	font-size: 65%;
+	color: #B91B22;
+}
+
+/* 下階層
+------------------------------------------------------------------------*/
+
+#content {
+	width: 100%;
+	float: none;
+}
+
+.cart {
+	background: #B91B22;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 120%;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+.cart a {
+	padding: 20px 0 23px;
+	display: block;
+	color: #FFF;
+	border-radius: 5px;
+}
+
+.cart a:hover {
+	background: #A3151B;
+}
+
+.bgMon {
+	background: url("https://www.rakuten.ne.jp/gold/monkiara/lib/img/content/top/mon_logo.png") top left no-repeat;
+}
+
+.bgKiara {
+	background: url("https://www.rakuten.ne.jp/gold/monkiara/lib/img/content/top/kiara_logo.png") top left no-repeat;
+}
+
+.box2 {
+	box-sizing: border-box;
+	margin-bottom: 0;
+	position: relative;
+}
+
+.box3 {
+	background: #FFF;
+	border: 1px solid #E5E5E5;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.box_main2 {
+	border: 1px solid #FFF;
+	box-sizing: border-box;
+}
+
+.mt {
+	margin-top: 180px;
+}
+
+.mt2 {
+	margin-top: 300px;
+}
+
+.cloth {
+	position: relative;
+}
+
+.cloth p {
+	width: 100%;
+	height: 100%;
+}
+
+.cloth div {
+	position: absolute;
+	z-index: 100;
+	top: 50%;
+	left: 50%;
+	margin-top: -74.5px;
+	margin-left: -74.5px;
+}
+
+.bg {
+	background: #F5F3E9;
+	padding: 20px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+}
+
+/* サイドバー
+------------------------------------------------------------------------*/
+
+#sidebar {
+	width: 100%;
+	float: none;
+}
+
+#sidebar h3 {
+	background: #231815;
+	text-align: center;
+	padding: 7px 0 5px;
+	margin-bottom: 15px;
+	font-size: 95%;
+	border: none;
+	color: #FFF;
+}
+
+.side_main {
+	margin-bottom: 20px;
+}
+
+.searchInput2 {
+}
+
+.searchInput2 input {
+	height: 30px;
+	width: 100%;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+}
+
+.searchBtn2 {
+	background: #B91B22;
+	border-radius: 5px;
+	font-size: 85%;
+	margin-top: 0;
+	width: 50%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.searchBtn2 a {
+	display: block;
+	padding: 5px 15px;
+	color: #FFF;
+}
+
+.side_main dl {
+	list-style: none;
+	text-align: left;
+	margin-bottom: 30px;
+	font-size: 85%;
+}
+
+.side_main dl dt {
+	border-bottom: 1px solid #E5E5E5;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	font-weight: bold;
+}
+
+.side_main dl dd {
+	background: url("../img/side/arrow.png") center left no-repeat;
+	padding-left: 10px;
+	margin-bottom: 15px;
+}
+
+.side_main ul li {
+	list-style: none;
+	text-align: left;
+	margin-bottom: 10px;
+	margin-right: 4%;
+	float: left;
+	width: 48%;
+}
+
+.side_main ul li:nth-child(2n) {
+	margin-right: 0%;
+}
+
+/* フッター
+------------------------------------------------------------------------*/
+
+footer {
+	margin-top: 50px;
+}
+
+#f_top {
+	margin-bottom: 20px;
+}
+
+#f_main {
+	display: none;
+}
+
+#l_f_main {
+	float: left;
+}
+
+.sitemap {
+	float:left;
+	margin-bottom: 20px;
+	margin-right: 100px;
+	font-size: 95%;
+}
+
+.sitemap:nth-of-type(3) {
+	margin-right:0px;
+}
+
+.sitemap dl {
+	margin-bottom: 20px;
+	text-align:left;
+	list-style:none;
+}
+
+.sitemap dl dt {
+	margin-bottom: 5px;
+}
+
+.sitemap dl dt a {
+}
+
+.sitemap dl dd {
+	font-size: 100%;
+	text-align: left;
+	padding-left: 18px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	background: url("../img/footer/arrow.jpg") center left no-repeat;
+}
+
+.sitemap dl dd a {
+}
+
+#r_f_main {
+	float: right;
+}
+
+#f_btm {
+	border-top: 1px solid #E5E5E5;
+}
+
+#f_left {
+	float: none;
+	padding: 30px 0 0;
+}
+
+#f_left p {
+	text-align: center;
+	margin: 0 auto;
+}
+	
+#f_right {
+	float: none;
+	padding: 35px 0 15px;
+}
+
+#left_f_right {
+	float: left;
+	margin-right: 0;
+}
+
+#left_f_right p {
+	margin-bottom: -5px;
+	line-height: 100%;
+}
+
+#left_f_right p:nth-child(1) {
+	font-size: 60%;
+}
+
+#left_f_right p:nth-child(1) span {
+	font-size: 60%;
+}
+
+#left_f_right .tel {
+	font-family: "ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+	font-size: 190%;
+}
+
+#left_f_right .tel span {
+	background: url("../img/footer/tel.svg") 0 10px no-repeat;
+	padding-left: 30px;
+}
+
+#right_f_right {
+	float: right;
+}
+
+address {
+	text-align:center;
+	font-style:normal;
+	background: #231815;
+	color: #FFF;
+	font-size:70%;
+	padding: 20px 0;
+}
+
+
+/* テーブル
+------------------------------------------------------------------------*/
+
+div.normalTbl {
+	margin:0 0 20px 0;
+	font-size: 95%;
+}
+
+div.normalTbl table {
+	border-top: 1px solid #E5E5E5;
+	border-left: 1px solid #E5E5E5;
+	border-spacing:0;
+	width:100%;
+}
+
+div.normalTbl table td {
+	border-right: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+	padding: 15px 20px;
+	background-color:#FFFFFF;
+	text-align:left;
+}
+
+div.normalTbl table th {
+	border-right: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+	padding: 15px 20px;
+	font-weight: bold;
+	border-top: 1px solid #FFFFFF;
+	border-left: 1px solid #FFFFFF;
+	background-color:#F5F3E9;
+	text-align:left;
+}
+
+div.normalTbl2 {
+	margin:0 0 20px 0;
+	font-size: 95%;
+}
+
+div.normalTbl2 table {
+	border-top: 1px solid #E5E5E5;
+	border-left: 1px solid #E5E5E5;
+	border-spacing:0;
+	width:100%;
+}
+
+div.normalTbl2 table td {
+	border-right: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+	padding: 15px 20px;
+	background-color:#FFFFFF;
+	text-align:center;
+}
+
+div.normalTbl2 table th {
+	border-right: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+	padding: 15px 20px;
+	font-weight: bold;
+	border-top: 1px solid #FFFFFF;
+	border-left: 1px solid #FFFFFF;
+	background-color:#F5F3E9;
+	text-align:center;
+}
+
+div.normalTbl3 {
+	margin:0 0 20px 0;
+	font-size: 95%;
+}
+
+div.normalTbl3 table {
+	border-top: 1px solid #E5E5E5;
+	border-left: 1px solid #E5E5E5;
+	border-spacing:0;
+	width:100%;
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+div.normalTbl3 table td {
+	border-right: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+	padding: 15px 20px;
+	background-color:#FFFFFF;
+	text-align:center;
+}
+
+div.normalTbl3 table th {
+	border-right: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+	padding: 15px 20px;
+	font-weight: bold;
+	border-top: 1px solid #FFFFFF;
+	border-left: 1px solid #FFFFFF;
+	background-color:#F5F5F5;
+	text-align:center;
+}
+
+
+} 
+

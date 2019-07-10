@@ -1,0 +1,66 @@
+
+/* レイアウト
+------------------------------------------------------------------------*/
+
+body {
+	color:#231815;
+	text-align:center;
+	margin:0 auto;
+	height:100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+p {
+	font-size: 95%;
+	line-height: 180%;
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+center {
+	margin-bottom: 20px;
+}
+
+center table {
+	border-top: 1px solid #E5E5E5;
+	border-left: 1px solid #E5E5E5;
+	border-spacing:0;
+	width:100%;
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+center table td {
+	border-right: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+	padding: 15px 20px;
+	background-color:#FFFFFF;
+	text-align:left;
+}
+
+center table th {
+	border-right: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+	padding: 15px 20px;
+	font-weight: bold;
+	border-top: 1px solid #FFFFFF;
+	border-left: 1px solid #FFFFFF;
+	background-color:#F5F3E9;
+	text-align:left;
+}
+
+b {
+	text-align: center;
+	font-family: "ＭＳ Ｐ明朝", "MS PMincho","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+	font-size: 180%;
+	font-weight: normal;
+	margin-bottom: 20px;
+	margin-top: 50px;
+	display: block;
+}
+
+font {
+	color: #B91B22;
+}

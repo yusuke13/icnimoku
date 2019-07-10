@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="230" height="50" viewBox="0 0 230 50">
+  <defs>
+    <pattern id="pattern" width="1" height="1" patternTransform="matrix(-1, 0, 0, 1, 44, 0)" viewBox="0 0 22 22">
+      <image preserveAspectRatio="none" width="22" height="22" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAD/ElEQVRoQ92ZSchdRRCFvwOiiIjDwuwkcaEocVpIRMTZlVMUwYloHBBUxCioQTfJQkQ3JqCCKMRAHEAkRsSFA1FUcABR4gxKXJqgRiQ75UjJfXLTvntvd9/8739amx/+e+pUn+7qqu5+Yo7M9oHAGRlD+hP4VNJeZYBnBrF9PvBWZsC9wPXzJuBhYG2mgIDtmTcBHwOnFQjYPTcCbB8B/AyUjGltCbhgYsqhtq8AXk48Xwc+mcIWm3i7pPfnScATwO3JYFdIirTqtHkS8C1wbGukUWUOleReAbbvBw4uX/T96nEA8GDCuFVSpFWvyfbbwHlDwEX4foekJ4fihoAHgIeGgIvw/ThJ3w3FDQErgA+HgDP+vkvSkpyYISA28u/AITkOM8JsknRTTqy/q5DtbcClicPFQFSChbaVwF1JkOskPZ8TeCIgCDYkDhdJikayoGb7ReCqJMgSSbtyAk8ELAd2JA6PSbonh2QMxvavwOEtjh2STsrl/KeR2f4FiPPIxL6QdGIuUQ3O9qlxrh8zcW0BkXPX1C5lpYD7gEfGpG5bwM3AMwnZKklbagaX42P7TeCCFvaPSKe4aeX4B6Yt4Gjgx8Rxs6TVuWQlONsHAb8B8Xdi70k6q4Rnn8Oc7R+AZS2C7IZSEjSwti8E3kj81klaX8KVCngauCUhOEHS1yWkOVjbjwL3JtgzJX2Q4z/BpAKuBl5ICL4CdpeQZmKjwh3ZwkbeR/7HPsi2VECU0Sini2GvSbqkNPC/LjS2o6FFY5u1rZG0sTToNAFxpEjPJqW8Nfjlkr4sdZwmIJbx1VKikfjqajfzO7Hto4CfEsFbJK2qmYTFEHAt8Fwy2NWSNv9XBGwC0u6efXxORU5dgeaVbKE28m1ApNHEvpF0fM3sh0+XgPh/9IP2Ob02xpDf45LuHAJ1fe/cA7ZfAq6sJS7wWykprrRV1ifgVuCpKtZ8p3h1i9e37ONz1h4IkO1jgO/zx1KF/EjS6VWejdPMy+iYwU7z/f8LsL0UOLupSO9K+qxmFm2f0/CEf/DsqeEp2QNRQqPpxMNT294BLs8dgO1TgK1ATETbim9fRSlkO2bq5I5Zim/nDoloBr+9p59slLRmzEp0NbJo9TH7fXa3pPQ1bx+87VeAywZ4lknaWSuiS0BO4MjjyOtOs93760rjODgRfTG6BESex8bts88lRX6PFbBe0rr9vQLPAjcMkG6TlG7wNIWi0hw2wHOjpIhXZV0rEKkRm6/PBgPbHpqIeNhaOlQMilMoHAaCZ73Y2Y5SHOnYVc0GJ2FoWXo7se3IzShzkzSIGdtQkrONiKhW7ZSMJ8x4hYhiMcqyjhJNPae2C09G2HTjnWPKZqr2L7LgVdbv1VmwAAAAAElFTkSuQmCC"/>
+    </pattern>
+  </defs>
+  <g id="グループ化_204" data-name="グループ化 204" transform="translate(-1061 -1055)">
+    <rect id="長方形_31" data-name="長方形 31" width="230" height="50" rx="5" transform="translate(1061 1055)" fill="#b91b22"/>
+    <g id="グループ化_203" data-name="グループ化 203" transform="translate(-3)">
+      <text id="カートを見る" transform="translate(1194 1086)" fill="#fff" font-size="15" font-family="HiraKakuProN-W6, Hiragino Kaku Gothic ProN"><tspan x="-45" y="0">カートを見る</tspan></text>
+      <rect id="カートのアイコン素材_その3" data-name="カートのアイコン素材 その3" width="22" height="22" transform="translate(1119 1069)" fill="url(#pattern)"/>
+    </g>
+  </g>
+</svg>
